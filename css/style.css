@@ -1,0 +1,504 @@
+body {
+  font-family: 'Montserrat', sans serif;
+  font-size: 12px;
+  width: auto;
+  color: #082138;
+  padding:  0% 15%;
+  background-color:  #FCD2D1;
+ }
+
+/* START HEADER */
+header {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  .tagline { 
+    font-size:  .7rem;
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 20px 50px;
+  border: none;
+}
+
+.logo img {
+  width:  100%;
+  height:  auto;
+}
+
+@media (min-width: 768px) {
+ .logo img {
+    width:  50%;
+  }
+}
+
+.tagline {
+  display: flex;
+  align-self: center;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing:  .5em;
+  font-size:  .5rem;
+}
+
+h1 {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0;
+  color:  #14279B;
+}
+
+/* MAIN */
+
+main {
+  width: 70%;
+  height:  100%;
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0% 15%;
+  
+  justify-content: space-between;
+  align-items:  center;
+  min-height: 400px;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction:  row;
+  }
+}
+
+/* Place bottle in below box */
+#display-container {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* BOTTLE DISPLAY */
+#bottle {
+  position: relative;
+  height: 500px;
+  width:  auto;
+  background:  url('../img/Wine+outline.png') top/50% no-repeat;
+}
+
+@media (max-width:  768px) {
+  #bottle {
+    background:  url('../img/Wine+outline.png') top/75% no-repeat;
+  }
+}
+
+@media (max-width: 360px) {
+
+  #display-container {
+    width:  100%;
+  }
+
+  #main {
+    padding: 0;
+  }
+}
+
+#wine-color {
+  position:  absolute;
+  max-width:  80%;
+  min-height:  100%;
+  top: 0%;
+padding: 0% 50%;
+  z-index: 0;
+} 
+
+
+#label-style {
+  position:  absolute;
+  width:  100%;
+  height:  100%;
+  top: 0%;
+padding:  0% 0%;
+  z-index: 0;
+} 
+
+@media (max-width: 360px) {
+  #label-style { 
+    padding:0% 0%;
+    top: 0%;
+    width:  100%;
+    height:  100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #label-style { 
+    padding: 0% 20%;
+    top: -10%;
+  }
+}
+
+/* PICKER */
+
+.picker {
+  width: 70%;
+  min-height: 500px;
+  
+  display:flex;
+  flex-direction:column;
+  
+  align-items: center;
+  overflow: hidden;
+}
+
+/* PICKER MENU */
+
+h3 {
+  color: #14279B;
+  display: block;
+  font-weight: 900;
+  font-family:'Montserrat';
+  letter-spacing:  .25em;
+  font-size:  .9em;
+  
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-picker-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-picker-container-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-picker-container-content {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding: 20px;
+  
+}
+
+.color {
+  border: 3px solid #14279B;
+  border-radius: 100%;
+  width: 50px;
+  height:50px; 
+}
+
+@media (max-width: 768px) {
+  .color {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.label {
+  border-radius: 100%;
+  width: 55px;
+  height:55px; 
+}
+
+@media (max-width: 768px) {
+  .label {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.label01, .label01lg, .label02, .label02lg, .label03, .label03lg {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 8px;
+  text-align:  center;
+}
+
+@media (min-width: 360px) {
+  .label01, .label01lg, .label02, .label02lg, .label03, .label03lg {
+    font-size:  .8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .label01, .label01lg, .label02, .label02lg, .label03, .label03lg {
+    font-size:  1.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .label01, .label01lg, .label02, .label02lg, .label03, .label03lg {
+    font-size:  1.6em;
+  }
+}
+
+.label01 {
+  background:url('../img/Label_01.png') top/50% no-repeat;
+  color:#fff;
+  font-family: 'Elsie';
+}
+
+.label01lg {
+  background:url('../img/Label_01.jpg');
+  background-size: 100%;
+  color:#fff;
+  font-family: 'Elsie';
+}
+
+.label02 {
+  background:url('../img/Label_02.png') top/50% no-repeat;
+  color:#fff;
+  font-family: 'Flamenco';
+}
+
+.label02lg {
+  background:url(../img/Label_02.jpg);
+  color:#fff;
+  font-family: 'Flamenco';
+}
+
+/* .label03 {
+  background:url(../img/Label_03.png) top/52% no-repeat;
+  font-family: 'Style Script';
+}
+
+.label03lg {
+  background:url(../img/Label_03.jpg);
+  background-position:  center center;
+  background-size: cover;
+  color:#fff;
+  font-family: 'Style Script';
+  justify-content:  center;
+  align-items:  center;
+}
+*/
+
+#redwine {
+  background-color: #630A10;
+}
+
+#wine-color {
+  position: absolute;
+  height: 500px;
+  width:  auto;
+  z-index: -1;
+}
+
+.redwinebottle {
+  background:url('../img/red-wine.png') top center/50% no-repeat;
+}
+
+#whitewine {
+  background-color: #FCF0C8;
+}
+
+.whitewinebottle {
+  background:url('../img/white_wine.png') top/50% no-repeat;
+}
+
+#rose {
+  background-color: #F6A9A9;
+}
+
+.rosebottle {
+  background:url('../img/rose-wine.png') top/50% no-repeat;
+}
+
+
+h4 {
+  color: #14279B;
+  margin:0;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  text-transform:lowercase;
+}
+
+.namewine {
+  text-align:center;
+  justify-content:center;
+}
+
+input.namewine {
+  max-width: 80%;
+  padding: 20px;
+  border-top: 0px;
+  border-bottom: 1px solid #14279B;
+  border-left:0px;
+  border-right: 0px;
+  text-align:center;
+  font-family: 'Montserrat';
+  font-size: .8em;
+  background-color: #FCD2D1;
+}
+
+button.namewine {
+  display:block;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #14279B;
+  border: 1px solid #14279B;
+  border-radius: 20px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size:  .7rem;
+  font-weight:  900;
+  letter-spacing:  5px;
+  color: #fff;
+}
+
+button.namewine:hover {
+  color:#14279B;
+  background-color:#FCD2D1;
+  border: 1px solid #14279B;
+  transition: background-color .25s ease-in;
+  transition:  color .25s ease-in;
+}
+
+/* START FOOTER */
+
+footer {
+  width: 100%;
+  text-align:center;
+  font-family: 'Montserrat';
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-top: 50px; 
+  display: flex;
+  flex-display: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footer-right {
+  padding-right: 20px;
+}
+
+p.footer {
+  display: block;
+  font-family: 'Montserrat';
+  font-size: .7rem;
+  font-weight: 800;
+  line-height: .9rem;
+  color:  #14279B;
+}
+
+
+/* DISPLAY NEEDS TO BE SET TO FLEX IN JS */
+.email-modal-bg {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vh;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.email-modal-bg-close {
+  display: flex;
+}
+
+.email-modal {
+  position: relative;
+  background-color: #14279B;
+  color: #fff;
+  width: 300px;
+  max-height: 250px;
+  
+  
+  border-radius: 5px;
+  padding: 30px 50px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing:  2px;
+  text-align: center;
+  font-style:  italic;
+  margin: 0;
+}
+
+input.modal {
+  width: 100%;
+  height: 50px;
+  border-top: 0;
+  border-bottom: 1px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  background-color: #14279B;
+  font-family: 'Montserrat';
+  text-align: center;
+  color: #fff;
+}
+
+button.modal {
+  display:block;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #14279B;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-weight:  900;
+  color:#14279B;
+  background-color:#fff;
+  border: 1px solid #ad944f;
+}
+
+button.modal:hover {
+  color: #fff;
+  background-color: #14279B;
+  border: 1px solid #fff;
+  transition: background-color .25s ease-in;
+  transition:  color .25s ease-in;
+}
+
+.modal-logo {
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal-close {
+  text-align:center;
+  padding: 10px;
+  text-decoration: underline;
+}
